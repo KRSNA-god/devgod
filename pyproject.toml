@@ -10,7 +10,7 @@ readme = "README.md"
 requires-python = ">=3.9"
 license = { text = "MIT" }
 authors = [
-    { name = "god_olds", telegram = "@god_olds" }
+    { name = "god_olds" }
 ]
 keywords = ["telegram", "bot", "devgod", "matrix", "cluster", "telegram-bot"]
 classifiers = [
@@ -30,10 +30,9 @@ dependencies = [
 ]
 
 [project.urls]
-Homepage = "https://github.com/YOUR_USERNAME/devgod"
-Repository = "https://github.com/YOUR_USERNAME/devgod.git"
-Issues = "https://github.com/YOUR_USERNAME/devgod/issues"
-"Bug Tracker" = "https://github.com/YOUR_USERNAME/devgod/issues"
+Homepage = "https://github.com/hostgodx/devgod"
+Repository = "https://github.com/hostgodx/devgod.git"
+Issues = "https://github.com/hostgodx/devgod/issues"
 
 [project.scripts]
 devgod = "devgod.cli:main"
