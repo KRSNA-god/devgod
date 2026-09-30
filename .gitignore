@@ -1,0 +1,29 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+.eggs/
+*.egg
+
+# Virtual envs
+venv/
+env/
+.venv/
+testenv/
+
+# ⚠️ SECRETS — NEVER COMMIT
+config.py
+*.db
+bot_data.db
+.env
+
+# IDE
+.vscode/
+.idea/
+*.swp
+
+# OS
+.DS_Store
+Thumbs.db
