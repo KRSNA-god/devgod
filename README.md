@@ -39,7 +39,7 @@ python -m devgod
 
 ## 🧙 First Time Setup
 
-Jab pehli baar `devgod` chalayega, ek wizard aayega:
+First Time `devgod` run, the wizard arrives:
 
 ```
 ██████╗ ███████╗██╗   ██╗    ██████╗ ██╗  ██╗...
