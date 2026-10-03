@@ -17,14 +17,14 @@ def load_config():
         return None
     try:
         spec = importlib.util.spec_from_file_location(
-            "devgod_config", str(CONFIG_PATH)
+            "aadigod_config", str(CONFIG_PATH)
         )
         mod = importlib.util.module_from_spec(spec)
         spec.loader.exec_module(mod)
         return {
             "TOKENS": getattr(mod, "TOKENS", []),
             "OWNER_ID": getattr(mod, "OWNER_ID", None),
-            "REBRAND": getattr(mod, "REBRAND", "DEV BHAGWAN"),
+            "REBRAND": getattr(mod, "REBRAND", "AADI BHAGWAN"),
         }
     except Exception as e:
         print(f"⚠️  Failed to load config.py: {e}")
@@ -35,9 +35,9 @@ def save_config(tokens, owner_id, rebrand):
     """Write config.py with the user's values."""
     now = datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
     content = f'''# ============================================================
-# DEV BHAGWAN — Auto-Generated Config
+# AADI BHAGWAN — Auto-Generated Config
 # Generated on: {now}
-# Powered by @god_olds
+# Powered by @wjv_1
 # ============================================================
 
 TOKENS = {tokens!r}
