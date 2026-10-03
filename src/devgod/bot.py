@@ -53,7 +53,7 @@ class KeepAliveHandler(BaseHTTPRequestHandler):
         self.send_response(200)
         self.send_header('Content-type', 'text/html')
         self.end_headers()
-        self.wfile.write(b"DEV Matrix Cluster is Alive 24/7")
+        self.wfile.write(b"AADI Matrix Cluster is Alive 24/7")
 
     def do_HEAD(self):
         self.send_response(200)
@@ -120,7 +120,7 @@ MENU_MEDIA_URL = "https://raw.githubusercontent.com/YOUR_GITHUB_USERNAME/YOUR_RE
 
 
 # ==================== DATA TEMPLATES ====================
-DEFAULT_NC_EMOJIS = ["🪭","🦠","🕯","🫍","🌌","⛓️💥","⚗️","🦪","🦕","🪐","🌀","🌊"]
+DEFAULT_NC_EMOJIS = ["🤙🏻","🦠","🍆","❤️‍🔥","🥷🏻","⛓️💥","🍌","🌶️","🥒","🪐","💯","🔥"]
 
 NC_STYLE_EMOJIS = {
     1: ["🪭","🦠","🕯","🫍","🌌","⛓️💥","⚗️","🦪","🦕","🪐","🌀","🌊"],
