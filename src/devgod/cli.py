@@ -1,16 +1,19 @@
-"""DEV BHAGWAN - CLI entry point with setup wizard."""
+"""AADI BHAGWAN - CLI entry point with setup wizard."""
 import sys
 
 from .config_loader import load_config, save_config, config_exists, CONFIG_PATH
 
 
 BANNER = r"""
-██████╗ ███████╗██╗   ██╗    ██████╗ ██╗  ██╗ █████╗  ██████╗ ██╗    ██╗ █████╗ ███╗   ██╗
-██╔══██╗██╔════╝██║   ██║    ██╔══██╗██║  ██║██╔══██╗██╔════╝ ██║    ██║██╔══██╗████╗  ██║
-██║  ██║█████╗  ██║   ██║    ██████╔╝███████║███████║██║  ███╗██║ █╗ ██║███████║██╔██╗ ██║
-██║  ██║██╔══╝  ╚██╗ ██╔╝    ██╔══██╗██╔══██║██╔══██║██║   ██║██║███╗██║██╔══██║██║╚██╗██║
-██████╔╝███████╗ ╚████╔╝     ██████╔╝██║  ██║██║  ██║╚██████╔╝╚███╔███╔╝██║  ██║██║ ╚████║
-╚═════╝ ╚══════╝  ╚═══╝      ╚═════╝ ╚═╝  ╚═╝╚═╝  ╚═╝ ╚═════╝  ╚══╝╚══╝ ╚═╝  ╚═╝╚═╝  ╚═══╝
+ ░▒▓██████▓▒░ ░▒▓██████▓▒░░▒▓███████▓▒░░▒▓█▓▒░       ░▒▓██████▓▒░ ░▒▓██████▓▒░░▒▓███████▓▒░  
+░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░      ░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░░▒▓█▓▒░ 
+░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░      ░▒▓█▓▒░      ░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░░▒▓█▓▒░ 
+░▒▓████████▓▒░▒▓████████▓▒░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░      ░▒▓█▓▒▒▓███▓▒░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░░▒▓█▓▒░ 
+░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░      ░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░░▒▓█▓▒░ 
+░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░      ░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░░▒▓█▓▒░ 
+░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░░▒▓█▓▒░▒▓███████▓▒░░▒▓█▓▒░       ░▒▓██████▓▒░ ░▒▓██████▓▒░░▒▓███████▓▒░  
+                                                                                             
+                                                                                             
 """
 
 
@@ -29,7 +32,7 @@ def show_banner():
     BOLD = "\033[1m"
 
     print(f"{CYAN}{BANNER}{RESET}")
-    print(f"{MAGENTA}{BOLD}{' ' * 78}(@god_olds){RESET}")
+    print(f"{MAGENTA}{BOLD}{' ' * 78}(@wjv_1){RESET}")
     print(f"{CYAN}{'━' * 90}{RESET}")
     print()
 
@@ -79,9 +82,9 @@ def run_wizard():
 
     # -------- REBRAND PROMPT --------
     print()
-    rebrand = ask("ENTER REBRAND NAME : ", default="DEV BHAGWAN")
+    rebrand = ask("ENTER REBRAND NAME : ", default="AADI BHAGWAN")
     if not rebrand:
-        rebrand = "DEV BHAGWAN"
+        rebrand = "AADI BHAGWAN"
 
     # -------- SAVE --------
     path = save_config(tokens, owner_id, rebrand)
@@ -108,7 +111,7 @@ def main():
     bot_module.OWNER_ID = cfg["OWNER_ID"]
     bot_module.REBRAND = cfg["REBRAND"]
 
-    print("🚀 Launching DEV BHAGWAN cluster...\n")
+    print("🚀 Launching AADI BHAGWAN cluster...\n")
     bot_module.run_bot()
 
 
