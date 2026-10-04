@@ -31,7 +31,7 @@ dependencies = [
 
 [project.urls]
 Homepage = "https://github.com/hostgodx/devgod"
-Repository = "https://github.com/hostgodx/devgod.git"
+Repository = "https://github.com/KRSNA-god/devgod.git"
 Issues = "https://github.com/hostgodx/devgod/issues"
 
 [project.scripts]
